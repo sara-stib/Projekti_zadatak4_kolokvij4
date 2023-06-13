@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <title>Vježbe</title>
+    <style>
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "prvi prvi prvi"
+                                 ". dva dva"
+                                 ". . tri" 
+                                 "sest cetri cetri"
+                                 "pet pet .";
+        }
+        .header {
+            grid-area: prvi;
+        }
+        .standfirst {
+            grid-area: dva;
+            
+        }
+        .article1 {
+            grid-area: tri;
+            
+        }
+        .pullquote {
+            grid-area: cetri;
+            
+        }
+        .article2 {
+            grid-area: pet;
+            column-count: 2;
+            column-gap: 65px;
+        }
+        .focus {
+            grid-area: sest;
+            text-align: center;
+        }
+        .whitebg {
+            background-color: whitesmoke;
+            padding: 80px 0;
+            
+        }
+        .container2 {
+            display: grid;
+            width: 80%;
+            margin: 0 auto;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "img1 img2 art";
+            color: black;
+        }
+        .img1 {
+            grid-area: img1;
+        }
+        .img2 {
+            grid-area: img2;
+        }
+        .img3 {
+            grid-area: img3;
+        }
+        .article3 {
+            grid-area: art;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 1200px) {
+            .container1 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "prvi prvi"
+                                     "dva dva"
+                                     "tri ." 
+                                     "cetri cetri"
+                                     "pet sest";
+            }
+            .article2 {
+                column-count: 1;
+            }
+            .container2 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "img1 img2"
+                                     "art art";
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .container1 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "prvi"
+                                     "dva"
+                                     "cetri"
+                                     "sest"
+                                     "pet";
+            }
+            .container2 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "img1" 
+                                     "img2"
+                                     "art";
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index2.html">O meni</a></li>
+            <li><a href="index3.html">Vježbe</a></li>
+            <li><a href="index4.html">Video</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="header">
+
+            <div id="heading">
+                <h2>Vježbe</h2>
+            </div>
+        </div>
+        <div class="standfirst">
+            <h3>Vektorska grafika</h3>
+            <ul>
+                <li><a href="vjezbe/Sara%C5%A0tibohardm.pdf" target="_blank">Vježba 1</a></li>
+                <li><a href="vjezbe/Sara%C5%A0tibohar4vjezba.pdf" target="_blank">Vježba 2</a></li>
+                <li><a href="vjezbe/%C5%A0tibSaraDM%20(1).pdf" target="_blank">Vježba 3</a></li>
+            </ul>
+            <h3>Piksel grafika</h3>
+            <div class="img1"><img src="vjezbe/Sara_%C5%A0tibohar_5vje%C5%BEba.jpg" class="ifit"></div>
+            <div class="img2"><img src="vjezbe/Sara_%C5%A0tibohar_5vje%C5%BEba_2.jpg" class="ifit"></div>
+            <div class="img3"><img src="vjezbe/Sara_%C5%A0tibohar_7vje%C5%BEba.jpg" class="ifit"></div>
+            <div class="img3"><img src="vjezbe/Sara_%C5%A0tibohar_7vje%C5%BEba2.jpg" class="ifit"></div>
+            <div class="img3"><img src="vjezbe/Vjezba_Sara_%C5%A0tibohar.jpg" class="ifit"></div>
+            <div class="img3"><img src="vjezbe/Vjezba_Sara_%C5%A0tibohar2.jpg" class="ifit"></div>
+            <h3>Video</h3>
+            <div class="img1"><img src="vjezbe2/moja_kinemagrafija.gif" class="ifit"></div>
+            <div class="img1"><img src="vjezbe2/voda.gif" class="ifit"></div>
+            <video src="vjezbe2/vj_9_2_Sara%C5%A1tibohar.mp4" controls></video>
+            <video src="vjezbe2/vj_9_Sara%C5%A0tibohar.mp4" controls></video>
+        </div>
+        <div class="article1">
+            <ul>
+                <li><a href="index.html" target="_blank">Početna stranica</a></li>
+            </ul>
+            
+        </div>
+    
+
+    </div>
+    
+
+
+    <footer>
+        <h4>&copy;Sara Štibohar</h4>
+    </footer>
+</body>
+
+</html>

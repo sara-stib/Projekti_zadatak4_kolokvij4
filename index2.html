@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <title>O meni</title>
+    <style>
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "prvi prvi prvi"
+                                 ". dva dva"
+                                 ". . tri" 
+                                 "sest cetri cetri"
+                                 "pet pet .";
+        }
+        .header {
+            grid-area: prvi;
+        }
+        .standfirst {
+            grid-area: dva;
+            
+        }
+        .article1 {
+            grid-area: tri;
+            
+        }
+        .pullquote {
+            grid-area: cetri;
+            
+        }
+        .article2 {
+            grid-area: pet;
+            column-count: 2;
+            column-gap: 65px;
+        }
+        .focus {
+            grid-area: sest;
+            text-align: center;
+        }
+        .whitebg {
+            background-color: whitesmoke;
+            padding: 80px 0;
+            
+        }
+        .container2 {
+            display: grid;
+            width: 80%;
+            margin: 0 auto;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "img1 img2 art";
+            color: black;
+        }
+        .img1 {
+            grid-area: img1;
+        }
+        .img2 {
+            grid-area: img2;
+        }
+        .article3 {
+            grid-area: art;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 1200px) {
+            .container1 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "prvi prvi"
+                                     "dva dva"
+                                     "tri ." 
+                                     "cetri cetri"
+                                     "pet sest";
+            }
+            .article2 {
+                column-count: 1;
+            }
+            .container2 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "img1 img2"
+                                     "art art";
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .container1 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "prvi"
+                                     "dva"
+                                     "cetri"
+                                     "sest"
+                                     "pet";
+            }
+            .container2 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "img1" 
+                                     "img2"
+                                     "art";
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index2.html">O meni</a></li>
+            <li><a href="index3.html">Vježbe</a></li>
+            <li><a href="index4.html">Video</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="header">
+
+            <div id="heading">
+                <h2>O meni</h2>
+            </div>
+        </div>
+        <div class="standfirst">
+            <p>Ja sam Sara Štibohar,2.godina sam na Grafičkom fakultetu. Volim crtati, pogotovo za likovnu praksu. Srednju školu sam završila u Zaboku i završila na GRF-u.</p>
+        </div>
+        <div class="article1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus ex nibh, eu accumsan eros rutrum ac. Aliquam venenatis ante vitae metus malesuada egestas. Aliquam a posuere turpis. Donec hendrerit consectetur nunc, id dapibus massa. Integer turpis dolor, iaculis consequat consectetur congue, imperdiet id arcu. Maecenas nec purus non enim aliquet sollicitudin. Sed ac lacinia sapien. Integer condimentum imperdiet porttitor. Fusce pulvinar volutpat dignissim.</p>
+            <p>Fusce in volutpat dolor, nec luctus felis. Nullam semper ligula at ex dignissim laoreet. Nullam laoreet luctus commodo. Duis interdum consectetur nibh vel ullamcorper. Donec vehicula ac neque eu tincidunt. Morbi dignissim augue in pretium consectetur. Cras blandit rutrum purus ut molestie. Quisque ex tellus, convallis non ante eget, malesuada pretium erat. Maecenas dictum dignissim felis in tincidunt. In rutrum velit sed massa euismod, quis elementum metus consequat. Donec massa justo, cursus vitae bibendum id, condimentum a ante. Nam magna dui, vestibulum non cursus sed, placerat sagittis augue.</p>
+        </div>
+        <div class="pullquote">
+            <h2>"AI je nova stvarnost,a stvarnost je... život,a život je... Josipa Lisac."</h2></div>
+        <div class="article2">
+            
+        </div>
+        <div class="focus"><img class="round" src="slike/pexels-ron-lach-9807277.jpg"></div>
+
+
+    </div>
+    <div class="whitebg">
+        <div class="container2">
+            <div class="img1"><img src="slike/pexels-blue-bird-7210459.jpg" class="ifit"></div>
+            <div class="img2"><img src="slike/pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-230514.jpg" class="ifit"></div>
+            <div class="img2"><img src="slike/pexels-miguel-%C3%A1-padri%C3%B1%C3%A1n-230514.jpg" class="ifit"></div>
+            
+            <div class="article3">
+                Fusce et ornare urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus blandit neque ex. Proin venenatis urna ac dui venenatis pretium. Duis mattis dui sit amet dignissim scelerisque. Nulla massa arcu, vestibulum at tempor sed, dictum eu massa. Praesent volutpat in tellus a ornare. Etiam cursus turpis ac euismod fermentum. Donec diam justo, pulvinar vitae semper a, tincidunt dapibus tortor. Aenean tortor urna, condimentum sit amet convallis in, feugiat ut sapien. Fusce tristique, turpis in vehicula varius, risus ante viverra tortor, sed pharetra lorem orci in dolor. Suspendisse potenti.
+                <ul>
+                    <li><a href="index.html" target="_blank">Početna stranica</a></li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <h4>&copy;Sara Štibohar</h4>
+    </footer>
+</body>
+
+</html>

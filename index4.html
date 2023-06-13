@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    <title>Video</title>
+    <style>
+        .container1 {
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "prvi prvi prvi"
+                                 ". dva dva"
+                                 ". . tri" 
+                                 "sest cetri cetri"
+                                 "pet pet .";
+        }
+        .header {
+            grid-area: prvi;
+        }
+        .standfirst {
+            grid-area: dva;
+            
+        }
+        .article1 {
+            grid-area: tri;
+            
+        }
+        .pullquote {
+            grid-area: cetri;
+            
+        }
+        .article2 {
+            grid-area: pet;
+            column-count: 2;
+            column-gap: 65px;
+        }
+        .focus {
+            grid-area: sest;
+            text-align: center;
+        }
+        .whitebg {
+            background-color: whitesmoke;
+            padding: 80px 0;
+            
+        }
+        .container2 {
+            display: grid;
+            width: 80%;
+            margin: 0 auto;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "img1 img2 art";
+            color: black;
+        }
+        .img1 {
+            grid-area: img1;
+        }
+        .img2 {
+            grid-area: img2;
+        }
+        .img3 {
+            grid-area: img3;
+        }
+        .article3 {
+            grid-area: art;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px;
+        }
+        @media screen and (max-width: 1200px) {
+            .container1 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "prvi prvi"
+                                     "dva dva"
+                                     "tri ." 
+                                     "cetri cetri"
+                                     "pet sest";
+            }
+            .article2 {
+                column-count: 1;
+            }
+            .container2 {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "img1 img2"
+                                     "art art";
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .container1 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "prvi"
+                                     "dva"
+                                     "cetri"
+                                     "sest"
+                                     "pet";
+            }
+            .container2 {
+                grid-template-columns: 1fr;
+                grid-template-areas: "img1" 
+                                     "img2"
+                                     "art";
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index2.html">O meni</a></li>
+            <li><a href="index3.html">Vježbe</a></li>
+            <li><a href="index4.html">Video</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <div class="header">
+
+            <div id="heading">
+                <h2>Video</h2>
+            </div>
+        </div>
+        <div class="standfirst">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Sz7QJSOlfWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Prvo sam snimila 4 videa i stavila sam ih u mapu. Otvorila sam program u kojem sam radila reklamu. Prvo sam išla raditi kinematografiju koju sam napravila tako da sam izrezala isječak iz videa i onda sam maknula zvuk. Onda sam išla na edit i tamo uzela sliku koju sam na photoshopu uredila da iz nje mogu napraviti kinematografiju. Tako sam išla na druge videje koje sam isto uzela isječke iz njih klipove koje sam dodala fade in i fade out efekte. Dodala sam smooth cut, additive dissolve i blur. Još par klipova sam obojala drugačije neko jesu.</p>
+            
+        </div>
+        <div class="article1">
+            <ul>
+                <li><a href="index.html" target="_blank">Početna stranica</a></li>
+            </ul>
+            
+        </div>
+    
+
+    </div>
+    
+    
+
+
+    <footer>
+        <h4>&copy;Sara Štibohar</h4>
+    </footer>
+</body>
+
+</html>
